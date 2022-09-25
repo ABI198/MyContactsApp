@@ -1,0 +1,64 @@
+button{
+    outline: none !important;
+    border: none;
+}
+
+.myButton{
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.myButton:hover{
+    transform: scale(1.3, 1.3);
+}
+
+.alertControl{
+    display: none;
+}
+
+
+/*Alert Smooth display:none Animations*/
+
+.animationDisplayBlock{
+    animation: smoothDisplayBlock 0.5s linear forwards;
+}
+
+@keyframes smoothDisplayBlock{
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.animationDisplayNone{
+    animation: smoothDisplayNone 0.5s linear forwards;
+}
+
+@keyframes smoothDisplayNone {
+    0% {
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.75;
+    }
+    50%{
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.25;
+    }
+    100%{
+        opacity: 0;
+    }
+}

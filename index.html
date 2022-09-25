@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Font-Awesome -->
+	<script src="https://kit.fontawesome.com/774ea239e8.js" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Contacts Application Without Using Class</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="mb-5 mt-3">My Contacts Application</h1>
+		<div class="alert-group">
+			<div class="alertControl alert alert-success">
+				<button type="button" class="myButton"></button>
+				New Contact was added <strong>succesfully</strong>
+			</div>
+			<div class="alertControl alert alert-primary">
+				<button type="button" class="myButton"></button>
+				Your Contact was edited <strong>succesfully</strong>
+			</div>
+			<div class="alertControl alert alert-danger">
+				<button type="button" class="myButton"></button>
+				Your Contact was deleted <strong>succesfully</strong>
+			</div>
+			<div class="alertControl alert alert-warning">
+				<button type="button" class="myButton"></button>
+				Some problems was happened when saving a new user
+			</div>
+			<div class="alertControl alert alert-success">
+				<button type="button" class="myButton"></button>
+				You have switched to 'Edit Mode' to edit selected user
+			</div>
+			<div class="alertControl alert alert-warning">
+				<button type="button" class="myButton"></button>
+				You cannot delete any user while 'Edit Mode' is active
+			</div>
+		</div>
+		
+		<form class="border p-4">
+			<div class="form-group">
+			  <label for="firstname">Firstname</label>
+			  <input type="text" class="form-control" placeholder="Enter name" id="firstname">
+			</div>
+			<div class="form-group">
+			  <label for="surname">Surname</label>
+			  <input type="text" class="form-control" placeholder="Enter surname" id="surname">
+			</div>
+			<div class="form-group">
+				<label for="email">Email address</label>
+				<input type="email" class="form-control" placeholder="Enter email" id="email">
+			</div>
+			<button id="submitButton" type="submit" class="btn btn-primary w-100 mb-3">Save</button>
+			<button id="editButton" type="button" class="btn btn-success w-100 mb-3 d-none">Edit</button>
+		</form>
+
+		<table class="table table-striped mt-5">
+			<thead>
+			  <tr>
+				<th>Firstname</th>
+				<th>Surname</th>
+				<th>Email</th>
+				<th>Operation</th>
+			  </tr>
+			</thead>
+			<tbody>
+			</tbody>
+		  </table>
+	</div>
+	
+			
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
